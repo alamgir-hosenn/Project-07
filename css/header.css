@@ -43,11 +43,7 @@ header {
 nav {
   line-height: 70px;
 }
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 ul a {
   /* background-color: rgb(124, 124, 124); */
   font-size: 17px;
