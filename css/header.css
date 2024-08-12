@@ -2,17 +2,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: roboto;
+  font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 html {
-  background: #000;
+  background: #d6d6d6;
 }
 body {
-  max-width: 1190px;
+  background-color: #fff;
+  max-width: 1390px;
   margin: 0 auto;
+  box-shadow: 0.3em 0.3em 3em rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
 }
 .checkbox {
   display: none;
@@ -21,14 +24,16 @@ body {
   display: none;
 }
 header {
-  background: linear-gradient(5deg, rgb(88, 0, 146), rgb(150, 0, 82));
+  /* background: linear-gradient(5deg, rgb(88, 0, 146), rgb(150, 0, 82)); */
+  background: transparent;
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 3em;
   top: 0;
-  position: sticky;
+  user-select: none;
+  /* position: sticky; */
   z-index: 100;
 }
 .logo {
@@ -36,16 +41,24 @@ header {
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
-.logo img {
-  width: 3em;
+.logo a img {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  width: 6em;
+  z-index: 10;
+  transition: all 0.3s ease-out;
+}
+.logo a img:hover {
+  width: 8em;
 }
 nav {
   line-height: 70px;
 }
 
 ul a {
-  /* background-color: rgb(124, 124, 124); */
   font-size: 17px;
   margin: 0 2px;
   letter-spacing: 1px;
@@ -53,7 +66,9 @@ ul a {
   border-radius: 1em;
   transition: 0.15s;
   border: 2px dotted rgba(0, 75, 40, 0);
+  font-family: "Poppins", sans-serif;
 }
 li a:hover {
   border: 2px dotted rgb(0, 199, 106);
+  transform: translate(3px, 3px);
 }
